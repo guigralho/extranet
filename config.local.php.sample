@@ -1,0 +1,24 @@
+<?php
+
+/*
+    Este é um arquivo de configuração local e inclui informações como banco de dados e tipo de deploy
+*/
+Configure::write('Cache.disable', true);
+Configure::write('App.type', 'dev'); // dev, live ou production
+Configure::write('debug', 2);
+
+Configure::write('Extranet.link', '//'.$_SERVER['SERVER_NAME'].'/extranet/');
+
+class DATABASE_CONFIG {
+
+    public $default = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => '198.199.83.221',
+        'login' => 'guilherme',
+        'password' => '942209',
+        'database' => 'extranet',
+        'prefix' => '',
+        //'encoding' => 'utf8',
+    );
+}
