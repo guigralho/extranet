@@ -1,17 +1,4 @@
-<section class="content-header">
-  <h1>
-    Dashboard
-    <small>Control panel</small>
-  </h1>
-  <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Dashboard</li>
-  </ol>
-</section>
-
-<!-- Main content -->
-<section class="content">
-  <!-- Small boxes (Stat box) -->
+<!-- Small boxes (Stat box) -->
   <div class="row">
     <div class="col-lg-3 col-xs-6">
       <!-- small box -->
@@ -100,7 +87,7 @@
         <div class="box-body chat" id="chat-box">
           <!-- chat item -->
           <div class="item">
-            <img src="dist/img/user4-128x128.jpg" alt="user image" class="online">
+            <img src="<?php echo $this->base ?>/img/user4-128x128.jpg" alt="user image" class="online">
             <p class="message">
               <a href="#" class="name">
                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
@@ -122,7 +109,7 @@
           </div><!-- /.item -->
           <!-- chat item -->
           <div class="item">
-            <img src="dist/img/user3-128x128.jpg" alt="user image" class="offline">
+            <img src="<?php echo $this->base ?>/img/user3-128x128.jpg" alt="user image" class="offline">
             <p class="message">
               <a href="#" class="name">
                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
@@ -135,7 +122,7 @@
           </div><!-- /.item -->
           <!-- chat item -->
           <div class="item">
-            <img src="dist/img/user2-160x160.jpg" alt="user image" class="offline">
+            <img src="<?php echo $this->base ?>/img/user2-160x160.jpg" alt="user image" class="offline">
             <p class="message">
               <a href="#" class="name">
                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
@@ -431,5 +418,3 @@
 
     </section><!-- right col -->
   </div><!-- /.row (main row) -->
-
-</section><!-- /.content -->

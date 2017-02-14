@@ -15,7 +15,6 @@
  */
 
 $cakeDescription = __d('cake_dev', 'Extranet');
-$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 <!DOCTYPE html>
 <html>
@@ -73,7 +72,18 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 			<!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
-      	<?php echo $this->fetch('content'); ?>
+      	<section class="content-header">
+				  <h1>
+				    <?php echo $action ?>
+				  </h1>
+				  <ol class="breadcrumb">
+				    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+				    <li class="active">Dashboard</li>
+				  </ol>
+				</section>
+				<section class="content">
+	      	<?php echo $this->fetch('content'); ?>
+	      </section>
       </div>
 
       <?php echo $this->element("footer"); ?>

@@ -65,3 +65,17 @@
  * A key/value array of driver specific connection options.
  */
 
+class DATABASE_CONFIG {
+
+    public $default = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'login' => 'root',
+        'password' => 'gui942209',
+        'database' => 'extranet',
+        'prefix' => '',
+        //'encoding' => 'utf8',
+    );
+}
+

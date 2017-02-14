@@ -5,5 +5,6 @@ class DashboardController extends AppController {
 
 	public function index(){
 
+		$this->set('action', 'Dashboard');
 	}
 }

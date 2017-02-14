@@ -142,7 +142,7 @@ class UsersController extends AppController {
 									 'subject'  => '[TESTE] Nova Senha',
 									 'config'   => 'default'
 									);
-
+		debug($dados);die(); 
 		if (!$this->Email->send($dados)) {
 			$this->Session->setFlash(__('Email não pôde ser enviado com sucesso'), 'default', array('class' => "alert alert-danger"));
 			$this->redirect(array('action' => 'index'));
@@ -160,7 +160,7 @@ class UsersController extends AppController {
 		}
 
 		$this->set("action", "Alterar Senha");
-		$this->set("form_action", "change_password");
+		$this->set("form_action", "../users/change_password");
 	}
 
 	public function primeiro_acesso(){
@@ -180,7 +180,8 @@ class UsersController extends AppController {
 		$this->Session->setFlash('Este é o seu primeiro acesso! Altere sua senha para continuar.', 'default', array('class' => "alert alert-success"));
 
 		$this->set("action", "Primeiro acesso");
-		$this->set("form_action", "primeiro_acesso");
+		$this->set("form_action", "users/primeiro_acesso");
+		$this->render("change_password");
 	}
 
 	public function login() {
