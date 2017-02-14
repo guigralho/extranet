@@ -217,6 +217,7 @@
 							</p>
 						</li>
 						<!-- Menu Footer-->
+						
 						<li class="user-footer">
 							<div class="pull-left">
 								<a href="<?php echo $this->base.'/users/change_password' ?>" class="btn btn-default btn-flat">Alterar senha</a>
